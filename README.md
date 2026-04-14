@@ -26,10 +26,27 @@ Every request must pass through full business, product, architecture, impact, st
 5. Refuse implementation until phases `00` through `13` are documented.
 6. Refuse merge or release until all hard gates are green.
 
+## Agent Compatibility
+
+This repo now exposes the policy through tool-compatible files:
+
+- `claude.md`: canonical long-form source of truth
+- `AGENTS.md`: Codex bootstrap file that tells Codex to read and obey `claude.md`
+- `.cursor/rules/*.mdc`: active Cursor project rules
+- `.cursorrules`: legacy Cursor compatibility shim
+- `codex.md` and `cursor.md`: mirror/reference copies for humans or custom tooling
+
+If any compatibility file ever differs from `claude.md`, `claude.md` wins.
+
 ## Repository Layout
 
 ```text
 /claude.md
+/AGENTS.md
+/codex.md
+/cursor.md
+/.cursor/rules/
+/.cursorrules
 
 /docs/sdlc/
   company-sdlc-policy.md
@@ -100,6 +117,8 @@ Every request must pass through full business, product, architecture, impact, st
 ## Start Here
 
 - Read `claude.md`
+- If you use Codex, keep `AGENTS.md` in the repo root
+- If you use Cursor, keep `.cursor/rules/*.mdc` under version control
 - Read `docs/sdlc/company-sdlc-policy.md`
 - Read `docs/sdlc/public-reference-points.md`
 - Copy `docs/features/_template/` for the first request you want to run through the system
