@@ -46,3 +46,18 @@ Use this document when the request caused or intersected with an incident, serio
 
 [Describe what must change in standards, testing, release process, or `claude.md`.]
 
+## Evidence And References To Attach
+
+- incident links
+- monitoring or log references
+- remediation references
+- communication references if relevant
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- root cause is still speculative
+- corrective actions have no owners
+- contributing factors are omitted
+- policy or process lessons are identified but not routed into follow-up work

@@ -55,3 +55,17 @@ Verify that the planned solution fits the current architecture or intentionally 
 | --- | --- | --- | --- |
 | Architect / technical owner | | approve / revise | |
 
+## Evidence And References To Attach
+
+- relevant architecture docs and ADR links
+- diagrams, ownership maps, or data-flow references
+- references to contracts or modules whose boundaries are affected
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- architecture fit is assumed but not explained
+- ownership changes are still implicit
+- an ADR is needed but was deferred without a decision
+- cross-boundary effects are still unclear

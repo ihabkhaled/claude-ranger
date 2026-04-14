@@ -13,6 +13,15 @@ This document defines the company-wide delivery operating model. It applies to a
 - No release happens without QA, security validation, business validation, risk review, and release approval.
 - Every phase writes artifacts into the repository.
 
+## Operating Principles
+
+1. Visibility beats assumption.
+2. Written artifacts beat memory.
+3. Tested behavior beats confidence.
+4. Reviewed changes beat isolated heroics.
+5. Reversible releases beat optimistic releases.
+6. Organizational learning is part of delivery, not a side activity.
+
 ## Scope
 
 This policy covers:
@@ -124,6 +133,22 @@ Document both severity and urgency during intake.
 - A later phase may refine an earlier phase, but it may not silently replace it.
 - Missing information must be documented as assumptions or open questions, not ignored.
 
+## Minimum Expectations For Every Phase
+
+Every phase must identify:
+
+- purpose
+- owner
+- inputs
+- outputs
+- assumptions
+- open questions
+- risks
+- evidence or references
+- exit decision
+
+If any of these are absent for a materially important phase, the phase is incomplete.
+
 ## Hard Gates
 
 - No coding before phases `00` through `13`
@@ -138,12 +163,40 @@ Document both severity and urgency during intake.
 - No release without required business or client sign-off
 - No release without recorded go / no-go decision
 
+## Signs The Process Is Being Bypassed
+
+The policy is being violated when any of the following appear:
+
+- implementation started before early artifacts exist
+- acceptance criteria are vague or missing
+- architecture impact was "understood verbally" but not written
+- tests are justified with "we checked it manually once"
+- docs are postponed until after release
+- open defects are hidden in chat, not in artifacts
+- support or operations first learn about the change after deployment
+- rollback is described as "we can revert somehow"
+- risk is described emotionally instead of concretely
+
 ## Waivers and Exceptions
 
 - Waivers are rare and time-bound.
 - Every waiver must name the approver, business reason, risk, compensating controls, and expiration date.
 - Waivers may reduce threshold or sequencing pressure, but may not erase traceability.
 - All waivers must be recorded in the relevant phase document and in the go / no-go record.
+
+## Hotfix Guardrails
+
+Hotfixes still require:
+
+- request classification
+- problem statement
+- explicit risk assessment
+- rollback plan
+- validation evidence
+- post-release documentation completion
+- retrospective review
+
+Hotfixes may move faster, but they may not become undocumented improvisation.
 
 ## Required Supporting Baselines
 
@@ -162,3 +215,6 @@ Every team implementing this policy must also maintain:
 
 The policy is working when no release surprises QA, security, support, operations, or the customer because all relevant work was made explicit before the change shipped.
 
+## Failure Condition
+
+The policy has failed when the organization repeatedly learns about important behavior only through production incidents, support escalation, or post-release confusion.

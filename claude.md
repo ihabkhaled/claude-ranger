@@ -961,6 +961,47 @@ Do not perform extraction mindlessly. Extract to improve clarity and ownership, 
 - operator and support docs matter as much as developer docs for operationally significant changes
 - release notes are required for user-visible or operator-visible behavior changes
 
+### Repository Standards And Control Files Rules
+
+- every mature repository must have explicit standards documents, not only implied habits
+- standards files must define engineering, testing, release, security, and documentation expectations clearly enough for a new engineer or AI agent to follow them without guessing
+- when a new enduring pattern appears, update the governing document instead of letting the rule live only in one pull request or one person's memory
+- if the codebase uses generators, codegen, scaffolds, or templates, they must be documented and included in the change review when behavior or contracts depend on them
+- if the codebase relies on build scripts, test scripts, release scripts, migration scripts, or developer bootstrap scripts, those scripts are part of the product and must be reviewed and updated when affected
+- repository control files such as ignore rules, code owner maps, CI config, formatter config, linter config, test config, security scan config, release config, and dependency policies must be treated as first-class delivery artifacts
+
+### Module Documentation Rules
+
+- every meaningful module, service, package, library, domain area, or subsystem should have discoverable documentation that explains what it owns, what problems it solves, what contracts it exposes, and what it depends on
+- module documentation must identify boundaries, responsibilities, public interfaces, key workflows, failure modes, and operational notes where relevant
+- if a new module is introduced without documentation, the change is incomplete
+- if an existing module changes its responsibilities, contracts, or usage expectations, the module documentation must be updated in the same delivery stream
+- the deeper or more reusable a module is, the higher the documentation expectation
+
+### Shared Standards For Types, Contracts, Constants, And Errors
+
+- shared domain concepts must be defined once and reused consistently
+- shared constants, contract definitions, enumerations, schemas, error catalogs, and policy identifiers should live in discoverable dedicated locations rather than being re-invented ad hoc across the codebase
+- when a concept crosses module or service boundaries, document its canonical source of truth
+- avoid scattering duplicate contract definitions across multiple layers when code generation, shared packages, or documented schemas can keep them aligned
+- if a repository cannot use generated or shared contracts, the synchronization approach must still be documented
+
+### Script, Command, And Automation Rules
+
+- every recurring quality task should have a stable command or script rather than depending on memory
+- build, test, lint, type-check, package, migration, seed, rollback, smoke-test, and release commands should be documented and discoverable
+- when a new change introduces a recurring operational step, consider whether a script or automation should own it instead of a manual checklist line alone
+- scripts must be safe, deterministic where practical, and documented with inputs, outputs, and side effects
+- destructive or high-risk scripts must require clear intent and should log what they changed
+- CI must use the authoritative commands or script entrypoints rather than a divergent shadow set of steps
+
+### Quality Script And Validation Harness Rules
+
+- if a codebase has a dedicated QA, smoke-test, migration-check, data-verification, or release-readiness script system, it must be maintained as part of the product
+- if a feature requires repeatable validation, provide a durable test harness, script, fixture, or documented execution path rather than a one-off undocumented command sequence
+- if runtime health checks, readiness checks, or canary checks exist, they must be updated when the change affects them
+- if a validation step is important enough to block release, it should be automatable where practical
+
 ## Mandatory Impacted-Area Checklist
 
 For every request, explicitly review whether the change affects any of the following:

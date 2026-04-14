@@ -29,6 +29,13 @@ This document defines the minimum engineering quality bar for any change that mo
 - Use consistent naming and module organization.
 - Keep functions and modules focused.
 
+### 3a. Shared Definitions and Module Hygiene
+
+- Shared domain concepts should have a canonical source of truth.
+- Contracts, constants, schemas, enums, error codes, and policy identifiers should not be duplicated carelessly across layers.
+- Meaningful modules should have documented ownership and responsibility.
+- Complex modules should expose stable public interfaces and avoid leaking internals.
+
 ### 4. Error Handling
 
 - Handle happy path, failure path, timeout path, dependency failure path, and partial failure path.
@@ -57,6 +64,12 @@ This document defines the minimum engineering quality bar for any change that mo
 - Every backfill requires monitoring, retry behavior, failure handling, and completion validation.
 - Every data contract change requires compatibility analysis.
 - Do not mutate production data blindly.
+
+### 7a. Migration Discipline
+
+- Every migration must state forward path, rollback path, validation method, and owner.
+- Large backfills must define batching, retry behavior, observability, and completion criteria.
+- Data repair or one-time scripts must be reviewed like product code if they can affect production state.
 
 ### 8. API and Contract Rules
 
@@ -90,6 +103,23 @@ This document defines the minimum engineering quality bar for any change that mo
 - Update user, support, architecture, API, and operations docs as needed.
 - Keep examples, screenshots, diagrams, and workflows current.
 
+## Script And Automation Standards
+
+- Recurring engineering actions should be captured in stable scripts or documented commands.
+- Build, test, lint, static-analysis, migration, seed, smoke-test, and release commands must be discoverable.
+- CI should run the canonical repository commands rather than a hidden alternate process.
+- High-risk scripts must document inputs, side effects, rollback expectations, and safety checks.
+
+## Non-Negotiable Anti-Patterns
+
+- hidden business logic in transport or presentation layers
+- undocumented cross-module coupling
+- silent fallback behavior that changes product meaning
+- retry storms without visibility
+- direct production-state mutation without review and validation
+- shipping user-visible behavior without documented states and error handling
+- leaving temporary flags, toggles, or compatibility shims ownerless
+
 ## Review Questions
 
 - Does the change fit the current architecture?
@@ -105,3 +135,13 @@ This document defines the minimum engineering quality bar for any change that mo
 
 If a change cannot meet a standard, the gap must be documented with risk, compensating controls, approver, and follow-up owner. Silent non-compliance is not allowed.
 
+## Minimum Evidence Of Compliance
+
+At review time, teams should be able to point to:
+
+- code locations
+- tests
+- docs
+- config or migration artifacts
+- logs, metrics, or dashboards where relevant
+- approval records where relevant

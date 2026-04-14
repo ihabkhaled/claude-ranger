@@ -49,3 +49,15 @@ Freeze the implementation rules before coding begins.
 | --- | --- | --- | --- |
 | Technical owner | | approve / revise | |
 
+## Evidence And References To Attach
+
+- relevant standards docs, style guides, ADRs, security baselines, and testing baselines
+- links to permanent-rule updates if needed
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- request-specific constraints are only in someone’s head
+- permanent-rule implications were noticed but not reflected in `claude.md`
+- implementation standards still differ between people working the change

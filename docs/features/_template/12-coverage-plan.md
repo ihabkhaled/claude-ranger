@@ -51,3 +51,17 @@ Define the measurable coverage gate for touched modules and guard against covera
 - [ ] Critical scenario areas called out
 - [ ] Waiver status documented
 
+## Evidence And References To Attach
+
+- coverage command or tooling reference
+- report location
+- touched-module identification method
+- waiver approval reference if needed
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- coverage is described only as a repo-wide average
+- critical scenario areas are not explicitly called out
+- a waiver is needed but has no approver or expiration date

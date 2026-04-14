@@ -72,3 +72,17 @@ Convert the request into a practical delivery plan with milestones, sequencing, 
 - [ ] Risks documented
 - [ ] Approval needs documented
 
+## Evidence And References To Attach
+
+- links to milestone tickets or tracking items
+- dependency references and approval references
+- rollout notes, release windows, or external coordination notes if known
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- sequencing is still guessed
+- blockers have no owners
+- rollout approach is missing for a risky change
+- the team cannot explain how work gets from plan to release

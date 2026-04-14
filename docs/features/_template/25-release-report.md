@@ -46,3 +46,18 @@ Record the actual production deployment and its immediate outcome.
 - Release owner:
 - Date:
 
+## Evidence And References To Attach
+
+- deployment logs or release system references
+- smoke-test evidence
+- dashboard or alert snapshots where useful
+- issue references if anything went wrong
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- the final release status is still ambiguous
+- smoke-test outcome is missing
+- post-release validation is not recorded
+- rollback status during release is unknown

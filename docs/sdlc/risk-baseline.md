@@ -27,6 +27,17 @@ This document defines how risk is identified, documented, reviewed, and accepted
 6. Define contingency or rollback.
 7. Reassess before release.
 
+## Risk Review Cadence
+
+Risk should be reviewed at least during:
+
+- intake
+- delivery planning
+- architecture review
+- security review when applicable
+- go / no-go
+- retrospective for escaped issues
+
 ## Required Risk Fields
 
 | Field | Description |
@@ -48,3 +59,10 @@ This document defines how risk is identified, documented, reviewed, and accepted
 - Accepted risk must be visible in go / no-go records.
 - Time-bound or conditional acceptance is preferred over permanent acceptance.
 
+## Common Risk Mistakes
+
+- describing risk vaguely without trigger or impact
+- assuming low likelihood means low importance
+- forgetting operational and support risk while focusing only on technical risk
+- accepting risk with no owner or expiration
+- treating rollback absence as a normal condition

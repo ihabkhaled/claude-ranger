@@ -61,3 +61,17 @@ Confirm the request makes sense commercially, strategically, and contractually.
 | --- | --- | --- | --- |
 | Business owner | | approve / revise | |
 
+## Evidence And References To Attach
+
+- contract extracts, SLA notes, account commitments, or commercial assumptions
+- rollout segmentation references
+- enablement or go-to-market notes when relevant
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- the request has no explicit commercial or strategic framing
+- rollout audience is still undefined
+- contractual impact is suspected but not checked
+- adoption risk is ignored

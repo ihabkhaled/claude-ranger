@@ -70,3 +70,18 @@ Prepare the team and the system to implement safely.
 | Technical owner | | approve / hold | |
 | Release owner if applicable | | approve / hold | |
 
+## Evidence And References To Attach
+
+- branch, environment, config, or flag references
+- migration and rollback references
+- observability and dashboard references
+- open readiness-gap owner references
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- rollout or rollback is still fuzzy
+- observability is still undefined
+- major readiness gaps have no owners
+- the team would still be improvising once coding starts

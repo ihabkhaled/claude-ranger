@@ -52,6 +52,17 @@ This document defines the minimum security and privacy bar for any shipped chang
 - Review network access, ports, trust boundaries, and ingress rules.
 - Validate rollback safety and secret handling during release.
 
+## Security Evidence Expectations
+
+Security review should leave evidence of:
+
+- what was reviewed
+- which threat scenarios were considered
+- what findings were raised
+- what was fixed
+- what remains open
+- who accepted any residual risk
+
 ## Threat Modeling Trigger Conditions
 
 Threat modeling is mandatory when a change touches:
@@ -67,7 +78,28 @@ Threat modeling is mandatory when a change touches:
 - AI model invocation with sensitive data
 - customer-visible workflows with abuse potential
 
+## Validation Methods
+
+Depending on risk, validation may include:
+
+- secure design review
+- auth and permission testing
+- abuse-case walkthroughs
+- dependency scanning
+- secret and config review
+- logging and data-leakage review
+- dynamic security testing
+- penetration-style testing
+
 ## Exit Rule
 
 No unresolved critical or high security issue may ship without an explicit written waiver from authorized leadership.
 
+## Common Security Failure Modes To Watch
+
+- assuming authorization because authentication exists
+- leaking secrets or protected data through logs
+- trusting client-supplied state
+- weak tenant-boundary checks
+- introducing operational access paths with no audit trail
+- changing deployment behavior without reviewing exposure and rollback safety

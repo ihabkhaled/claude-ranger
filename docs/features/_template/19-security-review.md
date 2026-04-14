@@ -53,3 +53,18 @@ Record security validation, controls, findings, and approval status.
 - Reviewer:
 - Date:
 
+## Evidence And References To Attach
+
+- findings list
+- remediation references
+- scan or validation outputs where relevant
+- waiver approvals where relevant
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- critical or high-risk issues remain unresolved without waiver
+- review scope is unclear
+- conditions of approval are not explicit
+- remediation ownership is missing

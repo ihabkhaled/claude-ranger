@@ -77,3 +77,17 @@ Design quality before implementation starts.
 | QA lead | | approve / revise | |
 | Technical owner | | approve / revise | |
 
+## Evidence And References To Attach
+
+- links to test-case files or test management entries
+- environment notes and seed-data notes
+- requirement references used to derive tests
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- only happy paths are covered
+- requirements are not mapped to test layers
+- security, permissions, migration, or rollback tests are omitted without explanation
+- the team still cannot say what evidence will prove the change works

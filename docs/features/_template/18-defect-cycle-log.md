@@ -26,3 +26,18 @@ Track each QA defect through fix, re-test, regression, and final closure.
 - [ ] QA re-validation completed
 - [ ] QA sign-off restored
 
+## Evidence And References To Attach
+
+- linked fix references
+- retest evidence
+- regression evidence
+- QA return notes
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- any returned defect has no owner
+- fixes changed behavior but docs were not reviewed
+- retest status is still pending for important defects
+- QA sign-off has not been restored

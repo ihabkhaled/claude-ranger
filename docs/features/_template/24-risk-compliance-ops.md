@@ -35,3 +35,18 @@ Confirm enterprise readiness before release.
 - Decision: approve / reject / approve with conditions
 - Date:
 
+## Evidence And References To Attach
+
+- risk references
+- compliance or policy references
+- runbook, dashboard, and alert references
+- support-readiness references
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- material risks have no owner
+- operational readiness is asserted without evidence
+- compliance impact is suspected but unreviewed
+- approval conditions are not written down

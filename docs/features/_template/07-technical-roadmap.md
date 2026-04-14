@@ -54,3 +54,17 @@ Define the engineering execution phases and sequence them into safe, reviewable 
 - [ ] Rollout order defined
 - [ ] Rollback order defined
 
+## Evidence And References To Attach
+
+- branch strategy or merge policy references
+- migration order references
+- rollout dependency diagrams or sequencing notes where relevant
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- implementation slices are too large to review safely
+- schema or contract evolution order is still unclear
+- rollback order is missing for risky changes
+- the roadmap cannot be followed step by step

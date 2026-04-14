@@ -22,6 +22,18 @@ This checklist is the minimum release gate for any deployment to production or a
 - [ ] Compliance and risk review completed when applicable
 - [ ] Go / no-go decision recorded
 
+## Required Readiness Evidence
+
+Before release, the team should be able to show:
+
+- validation reports
+- QA sign-off
+- security sign-off where applicable
+- rollback steps
+- smoke-test definitions
+- dashboard or alert references
+- known-issues guidance for support if needed
+
 ## Deployment Execution
 
 - [ ] Release window confirmed
@@ -43,6 +55,17 @@ This checklist is the minimum release gate for any deployment to production or a
 - [ ] User-facing flows validated
 - [ ] No critical alerts triggered without response
 
+## Release Blockers
+
+Release must stop when:
+
+- smoke tests are undefined
+- rollback is theoretical rather than practical
+- critical dashboards or alerts are missing
+- the release owner cannot explain the blast radius
+- open defects are not explicitly accepted
+- support and on-call ownership are unclear
+
 ## Hypercare Handoff
 
 - [ ] Hypercare window has owner and duration
@@ -50,3 +73,12 @@ This checklist is the minimum release gate for any deployment to production or a
 - [ ] Support and customer-facing teams have known-issues guidance
 - [ ] Rollback criteria remain visible until stabilization
 
+## Release Record Expectations
+
+The release report should capture:
+
+- what was deployed
+- who approved it
+- what was validated immediately after deployment
+- what issues occurred during rollout
+- whether rollback remained available the whole time

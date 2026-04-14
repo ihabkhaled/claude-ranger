@@ -33,3 +33,17 @@ Track production behavior during the hypercare window.
 - Outcome: healthy / needs follow-up / rollback required
 - Follow-up actions:
 
+## Evidence And References To Attach
+
+- dashboard links
+- incident links
+- support-ticket summaries
+- KPI or adoption summaries where relevant
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- the hypercare window was never actually monitored
+- elevated signals were observed but not investigated
+- follow-up actions are needed but ownerless

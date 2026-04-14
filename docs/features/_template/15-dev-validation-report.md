@@ -54,3 +54,17 @@ Record the implementation team's proof that the change works before independent 
 - [ ] Evidence recorded
 - [ ] Defects handed to phase `16`
 
+## Evidence And References To Attach
+
+- command outputs or summarized results
+- screenshots or recordings when useful
+- logs, traces, state verification notes, or query results where relevant
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- validation was claimed but not evidenced
+- writes or state transitions were not verified
+- acceptance criteria were not checked explicitly
+- known defects were discovered but not logged

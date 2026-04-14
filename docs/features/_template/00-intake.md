@@ -93,3 +93,19 @@ Classify the request before solutioning begins.
 | --- | --- | --- | --- |
 | Intake owner | | approve / revise | |
 
+## Evidence And References To Attach
+
+- source ticket, email, incident, request thread, or roadmap reference
+- links to previous related requests if this is follow-on work
+- incident IDs or support cases if this is reactive work
+- named owners and escalation contacts
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- the request type is still ambiguous
+- ownership is still ambiguous
+- severity or urgency is guessed but not recorded
+- critical-risk areas were not reviewed
+- the request does not yet have a stable identifier

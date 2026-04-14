@@ -70,3 +70,17 @@ Select the technical direction after comparing realistic implementation options 
 | Technical owner | | approve / revise | |
 | Architect if applicable | | approve / revise | |
 
+## Evidence And References To Attach
+
+- design diagrams, rough sequence notes, benchmark notes, or architecture references
+- links to reused components, libraries, or existing patterns being followed
+- links to ADRs if created or updated
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- only one option was considered when multiple realistic options exist
+- trade-offs are hidden behind preferences
+- the chosen approach has no explicit reasoning
+- open technical questions remain ownerless

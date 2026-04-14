@@ -79,3 +79,18 @@ Translate business intent into testable product requirements.
 | --- | --- | --- | --- |
 | Product owner | | approve / revise | |
 
+## Evidence And References To Attach
+
+- story sources, mockups, flow diagrams, or content references
+- policy references for permissions, compliance, or workflow rules
+- analytics event or reporting expectations if applicable
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- acceptance criteria are vague, untestable, or subjective
+- non-goals are missing
+- error states are missing
+- permission behavior is assumed instead of written
+- definition of done exists only in engineering terms

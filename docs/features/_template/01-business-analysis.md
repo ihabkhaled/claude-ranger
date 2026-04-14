@@ -79,3 +79,18 @@ Describe the business problem and the value of solving it before implementation 
 | --- | --- | --- | --- |
 | Business owner | | approve / revise | |
 
+## Evidence And References To Attach
+
+- stakeholder interviews, ticket comments, or meeting notes
+- customer feedback, support evidence, incident summaries, or operational pain signals
+- dashboards or KPI baselines where available
+- dependency references to contracts, policies, or other teams
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- the problem statement still describes only a requested solution and not the business pain
+- there is no measurable success definition
+- impacted users are still vague
+- the cost of not doing the work is unstated

@@ -33,3 +33,18 @@ Capture business or operational validation of the delivered solution in realisti
 - Business owner:
 - Date:
 
+## Evidence And References To Attach
+
+- participant list
+- executed scenarios
+- screenshots or recordings where useful
+- business feedback notes
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- business users did not exercise real workflows
+- the original business problem is still untested in practice
+- approval conditions are unclear
+- business fit issues were found but not captured

@@ -27,3 +27,17 @@ Track implementation-team defects and their resolution before the change is hand
 - [ ] Regression re-run after fixes
 - [ ] Build marked internally stable
 
+## Evidence And References To Attach
+
+- defect tracker references or links to fix changes
+- retest notes
+- regression rerun notes
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- blocker defects are still open
+- retest status is missing
+- regression was not rerun after fixes
+- "stable" is asserted without evidence

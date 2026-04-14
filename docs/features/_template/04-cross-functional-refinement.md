@@ -75,3 +75,17 @@ Align product intent with engineering, QA, security, operations, support, analyt
 | Technical owner | | approve / revise | |
 | Product owner | | approve / revise | |
 
+## Evidence And References To Attach
+
+- attendee list or async-review participant list
+- architecture links, ticket references, or dependency notes discussed during refinement
+- explicit owner for each open question
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- major impacted functions have not reviewed the request
+- hidden work is still being discovered informally
+- open questions have no owners
+- cross-system implications were mentioned verbally but not captured

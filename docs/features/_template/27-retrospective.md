@@ -34,3 +34,16 @@ Capture what the organization learned from the delivery whether it succeeded per
 
 [Describe whether `claude.md` should change permanently based on this learning.]
 
+## Evidence And References To Attach
+
+- links to request artifacts
+- incident or defect references if relevant
+- action item tracker references
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- no actual learning was captured
+- action items have no owners
+- permanent process lessons were found but not routed into policy or docs

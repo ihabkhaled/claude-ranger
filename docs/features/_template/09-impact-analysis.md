@@ -56,3 +56,17 @@ Reveal the full blast radius so no team or system is surprised later.
 - [ ] Monitoring impact documented
 - [ ] Support impact documented
 
+## Evidence And References To Attach
+
+- links to affected system docs, support docs, dashboards, and runbooks
+- contract references or dependency references
+- migration and compatibility notes
+
+## Phase Blockers
+
+Do not close this phase if:
+
+- any major department impact is still "to be checked later"
+- compatibility impact is unknown
+- support or monitoring implications are omitted
+- migration needs are suspected but not documented

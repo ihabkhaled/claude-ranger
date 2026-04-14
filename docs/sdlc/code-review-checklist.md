@@ -10,6 +10,15 @@ Use this checklist for every pull request or change review. A reviewer should be
 - Confirm the PR scope matches the documented plan.
 - Confirm the PR is reviewable in size and logically cohesive.
 
+## Evidence Reviewers Should Expect
+
+- linked request artifact or summary
+- acceptance criteria
+- test evidence or test plan
+- documentation updates for changed behavior
+- migration or rollback notes when relevant
+- risk notes for unusual trade-offs or waivers
+
 ## Checklist
 
 ### Scope and Intent
@@ -71,7 +80,27 @@ Use this checklist for every pull request or change review. A reviewer should be
 - Use `SHOULD FIX` for important improvements before merge when reasonable.
 - Use `FOLLOW-UP` only for non-blocking items with explicit owner and due date.
 
+## Automatic Blockers
+
+Do not approve when any of the following are true:
+
+- the reviewer cannot explain the change clearly
+- architecture or contract impact is unclear
+- failure-path handling is missing for critical workflows
+- tests do not match the actual risk
+- docs are stale for changed behavior
+- rollback or migration risk is unaddressed
+- open security or privacy concerns are hand-waved
+
 ## Approval Rule
 
 Do not approve when a blocker remains unresolved, when artifacts are missing, or when the reviewer cannot explain the change with confidence.
 
+## Review Record Quality
+
+Review comments should be specific enough that another engineer could understand:
+
+- what is wrong
+- why it matters
+- what evidence is missing
+- what would make the issue resolved
